@@ -155,7 +155,8 @@ class _InputPageState extends State<InputPage> {
                               icon: FontAwesomeIcons.plus,
                             onPressed: (){
                                 setState(() {
-                                  weight++;
+                                  if(weight<=1000)
+                                    weight++;
                                 });
                             },
                             ),
@@ -197,7 +198,8 @@ class _InputPageState extends State<InputPage> {
                               icon: FontAwesomeIcons.plus,
                               onPressed: (){
                                 setState(() {
-                                  age++;
+                                  if(age<=150)
+                                    age++;
                                 });
                               },
                             ),
